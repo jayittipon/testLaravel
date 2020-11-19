@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Arsenal:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: linear-gradient(rgba(3, 255, 234, 0.1), rgba(0, 255, 106, 0.1)), url(../img/bg.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: top;
+    
+    font-family: 'Arsenal', sans-serif;
+    font-weight: 400;
+    letter-spacing: 0.02em;
+
+}
+.container{
+    height: 100vh; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.signin{
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.4);
+    /*พื้นหลังโปร่งใส*/
+    padding: 50px 40px;
+    width: 500px;
+    border-radius: 4px;
+}
+
+.logo{
+    text-align: center;
+}
+
+label{
+    
+    font-size: 14px;
+    font-weight: 700;  
+}
+
+.text-input {
+    font-family: 'Arsenal', sans-serif;
+    outline: none;
+    width: 100%;
+    padding:10px;
+    margin:5px 0 10px 0;
+    border: 0;
+    box-shadow:0 0 4px rgba(0,0,0,0.3);
+    /*horizontal vertical blur color*/
+    border-radius:3px;
+}
+.text-input:hover {
+    box-shadow:0 0 4px rgba(0,0,0,0.5);
+}
+
+.primary-btn{
+    margin: 20px 0 0 0 ;
+    width: 100%;
+    background-color: #4CAF50;
+   
+    border: none;
+    padding: 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 2px;
+    box-shadow:0 0 4px rgba(0,0,0,0.3);
+
+    color: white;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.primary-btn:hover{
+    box-shadow:0 0 4px rgba(0,0,0,0.5);
+}
+
+@media (max-width: 480px){
+    .signin{
+    width: 300px;
+    }
+}
